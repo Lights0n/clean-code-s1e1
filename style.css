@@ -34,7 +34,8 @@
   margin: 0 auto 0;
 }
 
-.task {
+.task,
+.todo-list-item__name {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -127,7 +128,7 @@ button{
   margin: 0 10px;
 }
 
-.todo-list-item > .task {
+.todo-list-item > .todo-list-item__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
@@ -149,7 +150,7 @@ button{
 }
 
 /* Completed */
-.completed-todo label {
+.completed-todo .todo-list-item__name {
   text-decoration: line-through;
   color: #888;
 }
